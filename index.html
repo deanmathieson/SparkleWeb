@@ -10,7 +10,7 @@
         <style>
             #mainImg {
                 width:100%;
-                max-height: 500px;
+                max-width: 1280px;
             }
             #mainBody {
                 max-width:1000px;
@@ -23,7 +23,7 @@
             }
             #aboutUs {
                 width: 100%;
-                margin: 0 auto;         
+                       
             }
             #aboutUs > h2 {
                 text-align: center;
@@ -45,13 +45,11 @@
             #footerContainer {
                 width:100%;
                 border-top: 2px solid;
-            }
-            #footer {
                 max-width: 1000px;
-                height:100%;
-                width:100%;
-                margin:0 auto;
+                margin: 0 auto;
             }
+
+              
         </style>
     </head>
 
@@ -62,12 +60,25 @@
             <div id="topbox">
                
                 <div id="logo">
-                    <img src="images/sparkleLogo.png"/>
+                    <div uk-scrollspy="cls:uk-animation-fade; delay: 500;">
+                        <img src="images/sparkleLogo.png"/>
+                    </div>
+        
                 </div>
             </div>
-            <div id="aboutUs">
-                <h2> About us </h2>
-                <p> lopsum smokum </p>
+            <div id="aboutUs" class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <h3 class="uk-card-title">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <img src="images/sparkleVan.jpg">
+                    </div>
+                </div>
+            </div>
             <!--SWITCHER BOX !-->
             <div id="switcherBox">
                 <ul class="uk-subnav uk-subnav-pill" uk-switcher>
