@@ -1,169 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sparkle Window Cleaning</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/uikit.css" />
-        <script src="js/uikit.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-        <style>
-            #mainImg {
-                width:100%;
-                max-width: 1280px;
-            }
-            #mainBody {
-                max-width:1000px;
-                margin: 0 auto;
-            } 
-            #topbox {
-                width: 100%;
-                margin-bottom: 50px;
-                margin-top: 20px;
-            }
-            #aboutUs {
-                width: 100%;
-                       
-            }
-            #aboutUs > h2 {
-                text-align: center;
-            }
-            #logo {
-                margin: 0 auto;
-                width:40%;
-            }
-            .uk-subnav > * {
-                width:30%;
-            }
-            .imgPane {
-                width: 33%;
-                float: left;
-            }
-            .imgPane > img {
-                padding: 5px;
-            }
-            #footerContainer {
-                width:100%;
-                border-top: 2px solid;
-                max-width: 1000px;
-                margin: 0 auto;
-            }
+<head>
+    <title>Sparkle Window Cleaning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <style>
+    html {
+        background-color: black;
+    }
+    .uk-card-default .uk-card-title {
+        color: #858a7e;
+    }
+    a, .uk-link {
 
-              
-        </style>
-    </head>
+        color: #61dbf2;
+    }
+    a:hover {
+        color: #0069b4;
+    }
+    body {
+        background-color: #61dbf2;
+    }
+    #mainBody {
+        max-width:1000px;
+        margin: 0 auto;
+        background-color: #f5f7f6;
+        padding-bottom: 20px;
+    } 
+    #topbox {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #logo {
+        margin: 0 auto;
+        width:40%;
+    }
+    .uk-subnav > * {
+        width:30%;
+    }
+    #footerContainer {
+        width:100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: white;
+    }
+    hr {
+        border:1px solid grey!important;
+        margin:0 auto;
+        max-width:400px;
+    }
+    #slideshow {
+        margin-bottom:25px;
+    }
+</style>
+</head>
+<body>
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/blueFacade.jpg');">
 
-    <body>
-        <img id="mainImg"  src="images/sparkleMain.jpg"/>
+        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Professional window cleaning for over 20 years</h1>
 
-        <div id="mainBody">
-            <div id="topbox">
-               
-                <div id="logo">
-                    <div uk-scrollspy="cls:uk-animation-fade; delay: 500;">
-                        <img src="images/sparkleLogo.png"/>
-                    </div>
-        
+    </div>
+
+    <div id="mainBody">
+
+        <div id="topbox">
+
+            <div id="logo">
+                <div uk-scrollspy="cls:uk-animation-fade; delay: 1000;">
+                    <img src="images/sparkleLogo.png"/>
                 </div>
-            </div>
-            <div id="aboutUs" class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                        <h3 class="uk-card-title">About Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                        <img src="images/sparkleVan.jpg">
-                    </div>
-                </div>
-            </div>
-            <!--SWITCHER BOX !-->
-            <div id="switcherBox">
-                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                    <li><a href="#">Window Cleaning</a></li>
-                    <li><a href="#">Gutter Cleaning</a></li>
-                    <li><a href="#">Pressure Washing</a></li>
-                </ul>
 
-                <ul class="uk-switcher uk-margin">
-                    <li>
-                        <div id="content1">
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div id="text1">
-                                <p>Lorum ipsom </p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="content2">
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div id="text2">
-                                <p>Lorum ipsom 2</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="content3">
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div class="imgPane">
-                                <img src="images/sparkleMain.jpg"/>
-                            </div>
-                            <div id="text3">
-                                <p>Lorum ipsom3</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
-    </body>
-    <footer>
-        <div id="footerContainer"> 
-            <div class="uk-flex" uk-grid>
-                <div class="uk-width-2-3@m uk-width-1-1@s">
-                    <h2>Contact Information</h2>
-                   <ul>
-                    <li>Phone: XXXXX</li>
-                    <li>Email: XXXXX</li>
-                    <li>Address:<ul>
-                        <li>line1</li>
-                        <li>line2</li>
-                        <li>post code</li>
-                    </ul>
+
+        <hr class="uk-divider">
+
+        <div id="aboutUs" class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <h3 class="uk-card-title">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <img src="images/sparkleVan.jpg">
+                </div>
+            </div>
+        </div>
+
+        <hr class="uk-divider">
+
+        <!--Slideshow!-->
+
+        <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 5000; min-height: 300; max-height: 400;">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                        <img src="images/sparkleMain2.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+                    <div class="uk-position-center uk-position-medium uk-text-center">
+                        <div uk-slideshow-parallax="scale: 1,1,0.8">
+                            <h2 uk-slideshow-parallax="x: 200,0,0">Window Cleaning</h2>
+                            <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                        <img src="images/gutter2.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+                    <div class="uk-position-center uk-position-medium uk-text-center">
+                        <div uk-slideshow-parallax="scale: 1,1,0.8">
+                            <h2 uk-slideshow-parallax="x: 200,0,0">Gutter Cleaning</h2>
+                            <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                        <img src="images/jetWash.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+                    <div class="uk-position-center uk-position-medium uk-text-center">
+                        <div uk-slideshow-parallax="scale: 1,1,0.8">
+                            <h2 uk-slideshow-parallax="x: 200,0,0">Power Washing</h2>
+                            <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
                 </li>
             </ul>
-                </div>
-                <div class="uk-width-1-3@m uk-width-1-1@s uk-flex-top">
-                     <img src="images/sparkleLogo.png" style="max-width: 190px; float:right"/>
-                </div>
-            </div>
-            <div style="float:right;">
-                Created by <a href="#">Toast House</a>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
         </div>
     </div>
-    </footer>
+</body>
+<footer>
+    <div id="footerContainer"> 
+        <div class="uk-flex" uk-grid>
+            <div class="uk-width-1-1@m uk-width-1-1@s">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="images/gids.jpg" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Contact Info</h3>
+                            <p><span uk-icon="phone"></span> <a href="tel:+447715214640">07715214640</a>
+                            </p>
+                            <p><span uk-icon="mail"></span> <a href="mailto:sparkle@frater.net">Email</a></p>
+                            <p><span uk-icon="facebook"></span> <a href="https://www.facebook.com/windowcleaningsparkle/" target="blank">Sparkle Window Cleaning Services</a></li>
+                            </p>
+                        </div>
+                        <img src="images/sparkleLogoSmall.png" style="float:right; padding:10px; " alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div style="float:right;">
+            Created by <a href="#">Toast House</a>
+        </div>
+    </div>
+</footer>
 </html>
